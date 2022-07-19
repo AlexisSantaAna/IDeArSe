@@ -1,0 +1,48 @@
+/* nav y main */
+.logo {
+  width: 50px;
+}
+
+.nav-item {
+  padding-left: 2rem;
+}
+
+#header {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(/assets/img/kidsfootball.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+
+.main-text {
+  color: white;
+  font-size: 6rem;
+  font-weight: 700;
+  width: 70%;
+  padding: 10px;
+  position: absolute;
+  bottom: 2rem;
+}
+
+/* sobre nosotros */
+.sobre-nosotros-fila {
+  min-height: 45vh;
+}
+.sobre-nosotros-fila:nth-child(1),
+.sobre-nosotros-fila:nth-child(3) {
+  background-color: rgba(224, 224, 224, 0.39);
+}
+
+.sobre-nosotros-img {
+  width: 54%;
+}
+
+.col-text {
+  padding: 3rem 8rem;
+}

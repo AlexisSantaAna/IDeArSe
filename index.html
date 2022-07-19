@@ -1,99 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IDeArSe</title>
-    <!-- Bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-  </head>
 
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link disabled"
-                  href="#"
-                  tabindex="-1"
-                  aria-disabled="true"
-                  >Disabled</a
-                >
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IDeArSe</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- Css -->
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+  <header id="header">
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <img class="navbar-brand img-fluid logo" src="./assets/logo.png"></img>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 ">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">SOBRE NOSOTROS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">ÁREAS DE TRABAJO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">NOTICIAS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">CONTACTO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">DONAR</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+    <!-- portada -->
+    <div class="container-fluid">
+      <h1 class="py-5 main-text">IDeArSe: Instituto del Deporte, el Arte y el Servicio</h1>
+    </div>
+  </header>
 
-    <main class="container">
-      <h1 class="text-center my-5">IDeArSe</h1>
-    </main>
+  <main>
+    <div id="sobre-nosotros">
+      <div class="row sobre-nosotros-fila">
+        <div class="col-6 col-text">
+          <h2>¿Quiénes somos?</h2>
+          <p>Somos un espacio de oportunidades para la educación y desarrollo de nuestros niños, jóvenes y adultos, con
+            especial atención en el entorno, circunstancias y características de cada uno.</p>
+        </div>
+        <div class="col-6 d-flex justify-content-center align-items-center">
+          <img class="sobre-nosotros-img img-fluid rounded-2" src="./assets/img/kidsplay.jpg">
+        </div>
+      </div>
+      <div class="row sobre-nosotros-fila">
+        <div class="col-6 d-flex justify-content-center align-items-center">
+          <img class="sobre-nosotros-img img-fluid rounded-2" src="./assets/img/handspainted.jpg">
+        </div>
+        <div class="col-6 col-text">
+          <h2>Historia</h2>
+          <p>Hay una historia particular respecto al lugar. Una de las propuestas de nuestro proyecto tiene que ver con
+            el Movimiento Scout y allí hay una coincidencia:<br>
+            En los alrededores del lote donde comenzarán nuestras actividades, existía un árbol donde se reunían un
+            grupo de niños de 11 años que planifican sus actividades scouts. Subidos a las ramas de un paraíso, estos 5
+            muchachos se ideaban e imaginaban un futuro que luego llegaría. Ese espíritu está presente en nuestra
+            propuesta; la fraternidad, la camaradería, la proyección mancomunada en camino a la excelencia.</p>
+        </div>
+      </div>
+      <div class="row sobre-nosotros-fila">
+        <div class="col-6 col-text">
+          <h2>Misión</h2>
+          <p>Queremos ser un lugar de construcción de la persona en todos sus aspectos, educando en virtudes y con un
+            sentido fraterno.<br><br>
+            Nuestro objetivo es la construcción de nuestro espacio para comenzar nuestras actividades.
+          </p>
+        </div>
+        <div class="col-6 d-flex justify-content-center align-items-center">
+          <img class="sobre-nosotros-img img-fluid rounded-2" src="./assets/img/kidspaint.jpg">
+        </div>
+      </div>
+    </div>
 
-    <!-- scripts -->
-    <script src="scripts/script.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  </main>
+
+  <!-- scripts -->
+  <script src="scripts/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
