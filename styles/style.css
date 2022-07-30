@@ -1,10 +1,23 @@
 /* nav y main */
+p {
+  font-size: 1.2rem
+}
 .logo {
   width: 50px;
 }
 
 .nav-item {
   padding-left: 2rem;
+}
+.nav-item a {
+  color: white;
+}
+.nav-item a:hover {
+  color: white;
+}
+
+nav {
+  background-color: #AB2121;
 }
 
 #header {
@@ -34,15 +47,35 @@
 .sobre-nosotros-fila {
   min-height: 45vh;
 }
-.sobre-nosotros-fila:nth-child(1),
-.sobre-nosotros-fila:nth-child(3) {
-  background-color: rgba(224, 224, 224, 0.39);
+.color-background {
+  background-color: #FFFAD6;
+}
+
+.sobre-nosotros-fila h2 {
+  border-bottom: 1px solid rgba(159, 159, 159, 0.499);
+  padding-bottom: 1rem;
 }
 
 .sobre-nosotros-img {
-  width: 54%;
+  width: 80%;
+  border-radius: 3%;
 }
 
-.col-text {
-  padding: 3rem 8rem;
+/* proyección a futuro */
+#proyeccion-futuro {
+  min-height: 85vh;
+}
+
+.scouts-img {
+  width: 85%
+}
+
+/* áreas de trabajo */
+#areas-trabajo {
+  min-height: 85vh;
+}
+
+.text-border {
+  border-bottom: 1px solid rgba(159, 159, 159, 0.499);
+  padding-bottom: 2rem;
 }
