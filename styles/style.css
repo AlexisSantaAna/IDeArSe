@@ -1,10 +1,23 @@
 /* nav y main */
+p {
+  font-size: 1.2rem
+}
 .logo {
   width: 50px;
 }
 
 .nav-item {
   padding-left: 2rem;
+}
+.nav-item a {
+  color: white;
+}
+.nav-item a:hover {
+  color: white;
+}
+
+nav {
+  background-color: #AB2121;
 }
 
 #header {
@@ -34,15 +47,77 @@
 .sobre-nosotros-fila {
   min-height: 45vh;
 }
-.sobre-nosotros-fila:nth-child(1),
-.sobre-nosotros-fila:nth-child(3) {
-  background-color: rgba(224, 224, 224, 0.39);
+.color-background {
+  background-color: #FFFAD6;
+}
+
+.sobre-nosotros-fila h2 {
+  border-bottom: 1px solid rgba(159, 159, 159, 0.499);
+  padding-bottom: 1rem;
 }
 
 .sobre-nosotros-img {
-  width: 54%;
+  width: 80%;
+  border-radius: 3%;
 }
 
-.col-text {
-  padding: 3rem 8rem;
+/* proyección a futuro */
+#proyeccion-futuro {
+  min-height: 85vh;
+}
+
+.scouts-img {
+  width: 85%
+}
+
+/* áreas de trabajo */
+#areas-trabajo {
+  min-height: 45vh;
+}
+
+.text-border {
+  border-bottom: 1px solid rgba(159, 159, 159, 0.499);
+  padding-bottom: 2rem;
+}
+
+/* donaciones */
+#donation {
+  min-height: 45vh;
+}
+
+/* contact */
+.contact {
+  min-height: 45vh;
+  background-color: #FFFAD6;
+
+}
+.btn-idearse {
+  background-color: #309C44 !important;
+  color: white;
+  border: none;
+  width: 400px;
+  height: 60px;
+  font-size: 1.5rem;
+  border-radius: 45px;
+}
+.btn-idearse:hover {
+  background-color: #7f8e62!important;
+}
+
+.icon-circle {
+  width: 3rem;
+}
+
+/* footer */
+#footer {
+  background: linear-gradient(90deg, #760101, #AB2121 25%, #760101);
+}
+#footer a {
+  color: rgb(228, 227, 227);
+  text-decoration: none;
+}
+#footer a .icon {
+  width: 2rem;
+  display: flex;
+  align-items: center;
 }
