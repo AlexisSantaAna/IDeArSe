@@ -13,6 +13,8 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
   <!-- Css -->
   <link rel="stylesheet" href="./styles/style.css">
+  <link href="styles/hamburger.css" rel="stylesheet">
+  
 </head>
 
 <body>
@@ -21,23 +23,25 @@
     <nav class="navbar navbar-expand-lg">
       <div class="container">
         <img class="navbar-brand img-fluid logo" src="assets/logo.png"></img>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler hamburger hamburger--collapse" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="burguer-toggle">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
         </button>
-        <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
-          <ul class="navbar-nav mb-2 mb-lg-0 ">
+        <div class="collapse navbar-collapse navbar-edit" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">SOBRE NOSOTROS</a>
+              <a class="active" href="#sobre-nosotros">SOBRE NOSOTROS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">PROYECTO</a>
+              <a class="active" href="#proyeccion-futuro">PROYECTO</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">CONTACTO</a>
+              <a class="active" href="#donation">DONAR</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">DONAR</a>
+              <a class="active" href="#contacto">CONTACTO</a>
             </li>
           </ul>
         </div>
@@ -54,20 +58,23 @@
     <section id="sobre-nosotros">
       <div class="container-fluid color-background">
         <div class="container ">
-          <div class="row sobre-nosotros-fila">
-            <div class="col-6 col-text pb-3">
+          <div class="row sobre-nosotros-fila pb-4">
+            <div class="col-12 col-md-6 col-text pb-3">
               <h2 class="pt-5">¿Quiénes somos?</h2>
               <p>
                 Somos un grupo de educadores formales y no formales y tenemos la intención de fundar un centro educativo
-                que no sólo sea una escuela sino que vaya más allá del desarrollo intelectual. Queremos ser serviciales a nuestra comunidad.
+                que no sólo sea una escuela sino que vaya más allá del desarrollo intelectual. Queremos ser serviciales
+                a nuestra comunidad.
                 <br><br>
 
-                Nuestro equipo se compone de maestros, profesores, profesionales y scouts.  Todos apasionados por el bienestar comunitario y el crecimiento de las personas.<br><br>
+                Nuestro equipo se compone de maestros, profesores, profesionales y scouts. Todos apasionados por el
+                bienestar comunitario y el crecimiento de las personas.<br><br>
 
                 Creemos que apuntar desde la edad temprana a la formación física, intelectual y de virtudes dará frutos
-                que serán formadores de mejores ciudadanos y personas que crean y creen un país mejor.</p>
+                que serán formadores de mejores ciudadanos y personas que crean y creen un país mejor.
+              </p>
             </div>
-            <div class="col-6 d-flex justify-content-end align-items-center">
+            <div class="col-12 col-md-6 d-flex justify-content-end align-items-center">
               <img class="sobre-nosotros-img img-fluid" src="assets/img/kidsplay.jpg" alt="foto de nenes jugando">
             </div>
           </div>
@@ -76,19 +83,23 @@
 
       <div class="container-fluid">
         <div class="container">
-          <div class="row sobre-nosotros-fila">
-            <div class="col-6 d-flex justify-content-start align-items-center">
-              <img class="sobre-nosotros-img img-fluid" src="assets/img/handspainted.jpg" alt="foto de manos sucias con pinturas de colores">
+          <div class="row sobre-nosotros-fila py-4">
+            <div class="col-12 col-md-6 d-flex justify-content-start align-items-center">
+              <img class="sobre-nosotros-img img-fluid" src="assets/img/handspainted.jpg"
+                alt="foto de manos sucias con pinturas de colores">
             </div>
-            <div class="col-6 col-text">
+            <div class="col-12 col-md-6 col-text">
               <h2 class="pt-5">Historia</h2>
-              <p> 
-                Desde el inicio de nuestro proyecto nos guiamos por los ideales del movimiento Scout.  Nos inspiramos en la 
-                historia de un grupo de niños de 11 años que que se reunían al rededor de un paraíso 
-                a planificar sus actividades scouts. Y allí, trepados a las ramas del árbol se ideaban e imaginaban un futuro que 
+              <p>
+                Desde el inicio de nuestro proyecto nos guiamos por los ideales del movimiento Scout. Nos inspiramos en
+                la
+                historia de un grupo de niños de 11 años que que se reunían al rededor de un paraíso
+                a planificar sus actividades scouts. Y allí, trepados a las ramas del árbol se ideaban e imaginaban un
+                futuro que
                 luego llegaría. Hoy muy cerca de ese árbol, comenzamos la construcción de IDeArSe.<br><br>
 
-                Ese espíritu siempre estará presente en nuestra propuesta: la fraternidad, la camaradería y la proyección
+                Ese espíritu siempre estará presente en nuestra propuesta: la fraternidad, la camaradería y la
+                proyección
                 mancomunada en camino a la excelencia.</p>
             </div>
           </div>
@@ -97,8 +108,8 @@
 
       <div class="container-fluid color-background">
         <div class="container">
-          <div class="row sobre-nosotros-fila">
-            <div class="col-6 col-text">
+          <div class="row sobre-nosotros-fila py-4">
+            <div class="col-12 col-md-6 col-text">
               <h2 class="pt-5">Misión</h2>
               <p>Cuando se piensa en emprender se piensa en ganar, en pasar de una situación a otra, siempre para mejor.
                 Nuestro objetivo es ser transformadores de realidades individuales y comunitarias. Y la educación de
@@ -110,7 +121,7 @@
                 transformar nuestras posibilidades y así las de nuestra comunidad.
               </p>
             </div>
-            <div class="col-6 d-flex justify-content-end align-items-center">
+            <div class="col-12 col-md-6 d-flex justify-content-end align-items-center">
               <img class="sobre-nosotros-img img-fluid" src="assets/img/kidspaint.jpg" alt="fotos de nenas estudiando">
             </div>
           </div>
@@ -123,30 +134,35 @@
     <section id="proyeccion-futuro" class="container">
       <h2 class="section-title text-center py-5">Nuestra proyección a Futuro</h2>
       <div class="row">
-        <div class="col-8">
+        <div class="col-12 col-md-8">
           <p>
-            <strong>Nosotros en 2022: </strong> nos presentamos a la comunidad. Logramos nuestro primer centro en colaboración con IPV
+            <strong>Nosotros en 2022: </strong> nos presentamos a la comunidad. Logramos nuestro primer centro en
+            colaboración con IPV
             Mendoza y Municipalidad de Guaymallén. Ponemos en marcha al Grupo Scout 1526 Don José de San Martín.
             Diseñamos nuestro centro de la mano de colaboradores scouts y profesionales de UTN F.R.Mendoza. Colocamos
             nuestro set de baños para dar mayores comodidades a nuestros chicos. Primera campaña de recaudación de
             fondos.<br><br>
 
-            <strong>Nosotros en 2023: </strong> comenzamos a construir nuestro centro educativo. 2da y 3era etapa de recaudación de
+            <strong>Nosotros en 2023: </strong> comenzamos a construir nuestro centro educativo. 2da y 3era etapa de
+            recaudación de
             fondos. Comenzamos con el Aula Taller de Oficios en junio de 2023. Abrimos inscripciones para el comienzo
             del siguiente y primer ciclo lectivo.<br><br>
 
-            <strong>Nosotros en 2024:</strong> comenzamos nuestras actividades formales en marzo para Nivel Inicial desde sala de 2 años
+            <strong>Nosotros en 2024:</strong> comenzamos nuestras actividades formales en marzo para Nivel Inicial
+            desde sala de 2 años
             a 7mo grado.<br><br>
 
-            <strong>Nosotros, en adelante:</strong> nos afianzamos como uno de los mejores centros educativos de Mendoza y
-            replicamos nuestra experiencia.</p>
+            <strong>Nosotros, en adelante:</strong> nos afianzamos como uno de los mejores centros educativos de Mendoza
+            y
+            replicamos nuestra experiencia.
+          </p>
         </div>
-        <div class="col-4 d-flex justify-content-end align-items-start">
+        <div class="col-12 col-md-4 d-flex justify-content-end align-items-start">
           <img src="assets/img/idearse.png" class="sobre-nosotros-img">
         </div>
       </div>
 
-      <div class="row py-5">
+      <div class="row py-5 scouts">
         <div class="col-3 d-flex align-items-center justify-content-center">
           <img src="assets/img/scouts1.jpg" class="scouts-img" alt="foto de Scouts">
         </div>
@@ -164,27 +180,29 @@
 
     <!-- áreas de trabajo -->
     <section id="areas-trabajo" class="text-center container-fluid color-background">
-      <h2 class="section-title py-5">Áreas de trabajo</h2>
-      <p class="text-border">Las actividades formales serán ofrecidas por el Instituto del Deporte, el Arte y el
-        Servicio, de acuerdo a las normativas de la Dirección General de Escuelas de la Provincia de Mendoza. 
-        La característica distintiva del servicio será guiada por los ideales del Movimiento Scout, que es nuestra 
-        propuesta educativa no formal.</p>
-      <div class="row">
-        <div class="col-4">
-          <img src="assets/img/areas1.png" class="py-5" alt="foto de aula">
-        </div>
-        <div class="col-4">
-          <img src="assets/img/areas2.png" class="py-5" alt="foto de campo de deporte">
-        </div>
-        <div class="col-4">
-          <img src="assets/img/areas3.png" class="py-5" alt="foto de aula de artes plásticas">
+      <div class="container">
+        <h2 class="section-title py-5">Áreas de trabajo</h2>
+        <p class="text-border">Las actividades formales serán ofrecidas por el Instituto del Deporte, el Arte y el
+          Servicio, de acuerdo a las normativas de la Dirección General de Escuelas de la Provincia de Mendoza.
+          La característica distintiva del servicio será guiada por los ideales del Movimiento Scout, que es nuestra
+          propuesta educativa no formal.</p>
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <img src="assets/img/areas1.png" class="py-5" alt="foto de aula">
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="assets/img/areas2.png" class="py-5" alt="foto de campo de deporte">
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="assets/img/areas3.png" class="py-5" alt="foto de aula de artes plásticas">
+          </div>
         </div>
       </div>
     </section>
 
 
     <!-- donación -->
-    <section id="donation" class="text-center">
+    <section id="donation" class="text-center container">
       <div class="row py-5">
         <div class="col-4">
           <img src="assets/icon-help.png" class="py-5" alt="ícono de Corazón">
@@ -206,7 +224,8 @@
             <button type="button" class="btn btn-idearse col-12" data-bs-toggle="modal" data-bs-target="#exampleModal">
               ¡Ayudanos con tu aporte!
             </button>
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -234,80 +253,82 @@
     </section>
 
     <!-- contacto -->
-    <section class="row contact">
-      <div class="col-6 d-flex justify-content-center align-items-center">
-        <img class="sobre-nosotros-img img-fluid rounded-2" src="assets/img/kidshands.jpg" alt="fotos de manos">
-      </div>
-      <div class="col-6 col-text">
-        <h2 class="contact-title text-center py-5">Contacto</h2>
-        <div class="row pb-4 pt-4">
-          <div class="col-3 d-flex justify-content-center align-items-center">
-            <img class="icon-circle" src="./assets/ubication.png" alt="ícono de ubicación">
-          </div>
-          <div class="col-9 d-flex justify-content-center align-items-center">
-            <p>Lorem ipsum dolor sit amet consectetur</p>
-          </div>
+    <section class="container-fluid color-background" id="contacto">
+      <div class="contact container d-flex justify-content-center align-items-center">
+        <div class="col-0 col-md-6 d-flex justify-content-center align-items-center">
+          <img class="sobre-nosotros-img img-fluid rounded-2" src="assets/img/kidshands.jpg" alt="fotos de manos">
         </div>
+        <div class="col-12 col-md-6 col-text">
+          <h2 class="contact-title text-center pt-5 pb-4">Contacto</h2>
+          <div class="row pb-4 pt-4">
+            <div class="col-3 d-flex justify-content-center align-items-center">
+              <img class="icon-circle" src="./assets/ubication.png" alt="ícono de ubicación">
+            </div>
+            <div class="col-9 d-flex justify-content-center align-items-center">
+              <p>Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+          </div>
 
-        <div class="row pb-4 pt-4">
-          <div class="col-3 d-flex justify-content-center align-items-center">
-            <img class="icon-circle" src="./assets/phone.png" alt="ícono de teléfono">
+          <div class="row pb-4 pt-4">
+            <div class="col-3 d-flex justify-content-center align-items-center">
+              <img class="icon-circle" src="./assets/phone.png" alt="ícono de teléfono">
+            </div>
+            <div class="col-9 d-flex justify-content-center align-items-center">
+              <p>Lorem ipsum dolor sit amet consectetur</p>
+            </div>
           </div>
-          <div class="col-9 d-flex justify-content-center align-items-center">
-            <p>Lorem ipsum dolor sit amet consectetur</p>
+
+          <div class="row pb-4 pt-4">
+            <div class="col-3 d-flex justify-content-center align-items-center">
+              <img class="icon-circle" src="./assets/mail.png" alt="ícono de email">
+            </div>
+            <div class="col-9 d-flex justify-content-center align-items-center">
+              <p>Lorem ipsum dolor sit amet consectetur</p>
+            </div>
           </div>
+
         </div>
-
-        <div class="row pb-4 pt-4">
-          <div class="col-3 d-flex justify-content-center align-items-center">
-            <img class="icon-circle" src="./assets/mail.png" alt="ícono de email">
-          </div>
-          <div class="col-9 d-flex justify-content-center align-items-center">
-            <p>Lorem ipsum dolor sit amet consectetur</p>
-          </div>
-        </div>  
-
       </div>
-    </section>  
+    </section>
 
     <section>
       <div id="entities" class="container sobre-nosotros-fila">
         <h2 class="section-title text-center py-5">Contamos con el apoyo de las siguientes entidades:</h2>
         <div class="row text-center">
-          <div class="col-4">
+          <div class="col-12 col-md-4">
             <img src="assets/fundacion-1.png" class="py-5" alt="ícono de Fundavita">
           </div>
-          <div class="col-4">
+          <div class="col-12 col-md-4">
             <img src="assets/fundacion-2.png" class="py-5" alt="ícono de Akimera">
           </div>
-          <div class="col-4">
+          <div class="col-12 col-md-4">
             <img src="assets/fundacion-3.png" class="py-5" alt="ícono de Fundación de Todo Corazón">
           </div>
         </div>
-        </div>
+      </div>
     </section>
   </main>
 
   <!-- footer -->
-  <footer id="footer" class="pb-4 pt-4"> 
+  <footer id="footer" class="pb-4 pt-4">
     <div class="container">
-        <div class="row">
-          <div class="col-lg-2 offset-lg-3">
-            <a href="">
-              <img class="icon"  src="./assets/facebook.svg" alt="ícono de facebook">
-            </a>
-          </div>
-          <div class="col-lg-2">
-            <a href="">
-              <img class="icon" src="./assets/instagram.svg" alt="ícono de instagram">
-            </a>
-          </div>
-          <div class="col-lg-2">
-            <a href="">
-              <img class="icon" src="./assets/youtube.svg" alt="ícono de youtube">
-            </a>
-          </div>
+      <div class="row">
+        <div class="col-2 offset-3">
+          <a href="#" class="d-flex justify-content-center align-items-center">
+            <img class="icon" src="./assets/facebook.svg" alt="ícono de facebook">
+          </a>
         </div>
+        <div class="col-2">
+          <a href="#" class="d-flex justify-content-center align-items-center">
+            <img class="icon" src="./assets/instagram.svg" alt="ícono de instagram">
+          </a>
+        </div>
+        <div class="col-2">
+          <a href="#" class="d-flex justify-content-center align-items-center">
+            <img class="icon" src="./assets/youtube.svg" alt="ícono de youtube">
+          </a>
+        </div>
+      </div>
     </div>
   </footer>
 
