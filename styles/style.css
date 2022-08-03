@@ -3,7 +3,7 @@ p {
   font-size: 1.2rem
 }
 .logo {
-  width: 50px;
+  width: 100px;
 }
 
 .nav-item {
@@ -85,12 +85,6 @@ nav {
   min-height: 45vh;
 }
 
-/* contact */
-.contact {
-  min-height: 45vh;
-  background-color: #FFFAD6;
-
-}
 .btn-idearse {
   background-color: #309C44 !important;
   color: white;
@@ -104,30 +98,32 @@ nav {
   background-color: #7f8e62!important;
 }
 
+/* contact */
+.contact {
+  min-height: 45vh;
+  background-color: #f0f0ed;
+}
+
 .icon-circle {
-  width: 3rem;
+  width: 2.2rem;
+}
+
+.links a {
+  text-decoration: none;
+  color: black;
+}
+
+#entities {
+  min-height: 45vh;
 }
 
 /* footer */
 #footer {
   background: linear-gradient(90deg, #760101, #AB2121 25%, #760101);
+  color: white;
+  letter-spacing: 3px;
 }
-#footer a {
-  color: rgb(228, 227, 227);
-  text-decoration: none;
-}
+
 #footer a .icon {
-  width: 2rem;
-  display: flex;
-  align-items: center;
-}
-
-/* áreas de trabajo */
-#areas-trabajo {
-  min-height: 85vh;
-}
-
-.text-border {
-  border-bottom: 1px solid rgba(159, 159, 159, 0.499);
-  padding-bottom: 2rem;
+  width: 1.8rem;
 }
