@@ -3,7 +3,7 @@ p {
   font-size: 1.2rem;
 }
 .logo {
-  width: 50px;
+  width: 100px;
 }
 .nav-item {
   padding-left: 2rem;
@@ -60,6 +60,7 @@ nav {
 .sobre-nosotros-fila {
   min-height: 45vh;
 }
+
 .color-background {
   background-color: #fffad6;
 }
@@ -88,16 +89,31 @@ nav {
   padding-bottom: 2rem;
 }
 
+/* áreas de trabajo */
+#areas-trabajo {
+  min-height: 45vh;
+}
+
+.text-border {
+  border-bottom: 1px solid rgba(159, 159, 159, 0.499);
+  padding-bottom: 2rem;
+}
+
 /* donaciones */
 #donation {
   min-height: 45vh;
 }
 
-/* contact */
+/* contacto */
 .contact {
   min-height: 45vh;
-  background-color: #fffad6;
+  background-color: #eae9e7;
 }
+
+.icon-circle {
+  width: 2.2rem;
+}
+
 .contact-title {
   border-bottom: 1px solid rgba(159, 159, 159, 0.499);
 }
@@ -114,34 +130,26 @@ nav {
   background-color: #7f8e62 !important;
 }
 
-.icon-circle {
-  width: 3rem;
+#entities {
+  min-height: 45vh;
 }
 
 /* footer */
 #footer {
-  background: linear-gradient(90deg, #760101, #ab2121 25%, #760101);
+  background: linear-gradient(90deg, #760101, #AB2121 25%, #760101);
+  color: white;
+  letter-spacing: 3px;
 }
-#footer a {
-  color: rgb(228, 227, 227);
-  text-decoration: none;
-}
+
 #footer a .icon {
-  width: 2rem;
-  display: flex;
-  align-items: center;
+  width: 1.8rem;
 }
 
-/* áreas de trabajo */
-
-#areas-trabajo {
-  min-height: 70vh;
+.links a {
+  text-decoration: none;
+  color: black;
 }
 
-.text-border {
-  border-bottom: 1px solid rgba(159, 159, 159, 0.499);
-  padding-bottom: 2rem;
-}
 
 /* MEDIA QUERIES */
 
