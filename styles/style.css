@@ -1,23 +1,36 @@
 /* nav y main */
 p {
-  font-size: 1.2rem
+  font-size: 1.2rem;
 }
 .logo {
   width: 100px;
 }
-
 .nav-item {
   padding-left: 2rem;
 }
 .nav-item a {
   color: white;
+  text-decoration: none;
 }
 .nav-item a:hover {
   color: white;
 }
 
 nav {
-  background-color: #AB2121;
+  background-color: #ab2121;
+}
+
+.navbar-edit {
+  display: flex;
+  justify-content: end;
+}
+
+.navbar-toggler-icon {
+  color: black !important;
+}
+
+.navbar-toggler:focus {  
+  box-shadow: none !important;
 }
 
 #header {
@@ -47,8 +60,9 @@ nav {
 .sobre-nosotros-fila {
   min-height: 45vh;
 }
+
 .color-background {
-  background-color: #FFFAD6;
+  background-color: #fffad6;
 }
 
 .sobre-nosotros-fila h2 {
@@ -67,7 +81,12 @@ nav {
 }
 
 .scouts-img {
-  width: 85%
+  width: 85%;
+}
+
+.text-border {
+  border-bottom: 1px solid rgba(159, 159, 159, 0.499);
+  padding-bottom: 2rem;
 }
 
 /* áreas de trabajo */
@@ -85,8 +104,21 @@ nav {
   min-height: 45vh;
 }
 
+/* contacto */
+.contact {
+  min-height: 45vh;
+  background-color: #eae9e7;
+}
+
+.icon-circle {
+  width: 2.2rem;
+}
+
+.contact-title {
+  border-bottom: 1px solid rgba(159, 159, 159, 0.499);
+}
 .btn-idearse {
-  background-color: #309C44 !important;
+  background-color: #309c44 !important;
   color: white;
   border: none;
   width: 400px;
@@ -95,22 +127,7 @@ nav {
   border-radius: 45px;
 }
 .btn-idearse:hover {
-  background-color: #7f8e62!important;
-}
-
-/* contact */
-.contact {
-  min-height: 45vh;
-  background-color: #f0f0ed;
-}
-
-.icon-circle {
-  width: 2.2rem;
-}
-
-.links a {
-  text-decoration: none;
-  color: black;
+  background-color: #7f8e62 !important;
 }
 
 #entities {
@@ -126,4 +143,55 @@ nav {
 
 #footer a .icon {
   width: 1.8rem;
+}
+
+.links a {
+  text-decoration: none;
+  color: black;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1199px) {
+  .main-text {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-text {
+    font-size: 2.8rem;
+  }
+  .sobre-nosotros-fila div {
+    justify-content: center !important;
+  }
+  #proyeccion-futuro div {
+    justify-content: center !important;
+    padding-bottom: 1.5rem;
+  }
+  .scouts {
+    display: none;
+  }
+  #donation img {
+    width: 50%;
+  }
+  #donation h5 {
+    font-size: 1.1rem;
+  }
+  .btn-idearse {
+    width: 300px;
+    height: 45px;
+    font-size: 1.2rem;
+    border-radius: 45px;
+  }
+  .navbar-edit {
+    display: block;
+  }
+  .navbar-edit li {
+    padding-left: 0;
+    margin: auto;
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
 }
