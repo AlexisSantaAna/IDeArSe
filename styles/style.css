@@ -199,3 +199,8 @@ nav {
     font-weight: 300;
   }
 }
+@media (min-width: 992px) {
+  .asdf {
+    padding: 1rem 0 !important;
+  }
+}
